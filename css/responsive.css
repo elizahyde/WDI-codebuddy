@@ -1,0 +1,36 @@
+@media screen and (max-width:960px) {
+  body {
+    padding: 0 20px 0 20px;
+    background: green;
+  }
+  #main>#extras, #main>#content {
+    width: 100%;
+    float: none;
+  }
+
+  #main > #content > section > header,
+  #main > #content > section, ul {
+    margin-right: 0;
+  }
+  #container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  body {
+    background: grey;
+  }
+  #container>header a:link,
+  #container>header a:visited {
+    width: 100%;
+    float: none;
+
+  }
+  body {
+    padding: 0;
+  }
+  #main {
+    padding: 0 20px;
+  }
+}
