@@ -20,17 +20,55 @@
 @media screen and (max-width:480px) {
   body {
     background: grey;
+    padding-top: 225px;
   }
+
   #container>header a:link,
   #container>header a:visited {
     width: 100%;
     float: none;
-
   }
-  body {
-    padding: 0;
+
+  #container>header h1 {
+    padding: 5px;
+  }
+
+  #container>header {
+    position: fixed;
+    background-color: silver;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  #container>header, #container>header nav {
+    margin-top: 0;
+  }
+  #container>header .tagline {
+    display: none;
   }
   #main {
     padding: 0 20px;
+  }
+
+  #menu-icon {
+    color: #000;
+    width: 42px;
+    height: 30px;
+    background: transparent url(../img/hamburger.png) 0 0 no-repeat;
+    padding: 8px 10px 0 42px;
+    cursor: pointer;
+    border: solid 1px #666;
+    display: block;
+  }
+  #nav-wrap #nav {
+    clear: both;
+    position: absolute;
+    top: 38px;
+    width: 160px;
+    z-index: 10000;
+    background: #f8f8f8;
+    border: solid 1px #999;
+    display: none;
   }
 }
